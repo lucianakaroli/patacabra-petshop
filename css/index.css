@@ -5,8 +5,8 @@
     background-color: #6BC6FF;
 }
 
-.menu-2 {
-    background-color: #af761a;
+.full-row {
+    width: 100%;
 }
 
 .navbar{
@@ -14,10 +14,28 @@
     line-height: 50px;
     font-weight: 300;
     font-size: large;
+    position: relative;
 }
 
 .offcanvas-body p{
     text-align: center;
     margin-top: 190px;
     font-size: 12px;
+}
+
+.search-container {
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.bg-body-blue {
+    background-color: #6BC6FF;
+    --bs-bg-opacity: 1;
+}
+
+.carousel-images {
+    display: flex;
+     justify-content: space-around;
+    width: 60%;
+     overflow: hidden;
 }
