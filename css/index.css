@@ -1,0 +1,23 @@
+*{
+    font-family: poppins;
+}
+.menu {
+    background-color: #6BC6FF;
+}
+
+.menu-2 {
+    background-color: #af761a;
+}
+
+.navbar{
+    --bs-navbar-color: white;
+    line-height: 50px;
+    font-weight: 300;
+    font-size: large;
+}
+
+.offcanvas-body p{
+    text-align: center;
+    margin-top: 190px;
+    font-size: 12px;
+}
