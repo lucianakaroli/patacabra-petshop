@@ -4,10 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Patacadabra: O paraíso de seu pet!</title>
+    <title>Patacadabra: Banho e tosa!</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="css/index.css" rel="stylesheet">
+    <link href="css/banho-tosa.css" rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Carter+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
@@ -47,6 +48,7 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/banho-tosa.html">Banho e tosa</a>
+                        </li>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/loja.html">Sobre a loja</a>
@@ -107,33 +109,103 @@
         </div>
     </div>
 
-    <div class="container">
-        <div id="carouselExampleIndicators" class="carousel slide">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <div class="container mt-5 pt-5">
+        <h1 class="text-center text-primary">Banho & Tosa</h1>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <img src="/assets/banho-dog.png" alt="Cachorro tomando banho" class="img-fluid rounded">
             </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="/assets/pagina-inicial.png" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item active">
-                <img src="/assets/hora-banho.png" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item active">
-                <img src="/assets/gato-mulher.png" class="d-block w-100" alt="...">
-              </div>
+        </div>
+
+        <h2 class="text-center mt-4">Entre em contato</h2>
+        <p class="text-center">Preencha o formulário abaixo que entraremos em contato</p>
+
+        <form class="row g-3 mt-4" action="#" method="post">
+            <fieldset class="border p-4 rounded">
+                <legend class="w-auto px-2 text-primary">Informações do Cliente</legend>
+
+                <div class="col-md-6">
+                    <label for="name" class="form-label">Nome:</label>
+                    <input type="text" id="name" name="name" class="form-control" required>
+                </div>
+
+                <div class="col-md-6">
+                    <label for="address" class="form-label">Endereço:</label>
+                    <input type="text" id="address" name="address" class="form-control" required>
+                </div>
+
+                <div class="col-md-6">
+                    <label for="phone" class="form-label">Telefone:</label>
+                    <input type="tel" id="phone" name="phone" class="form-control" required>
+                </div>
+
+                <div class="col-md-6">
+                    <label for="email" class="form-label">E-mail:</label>
+                    <input type="email" id="email" name="email" class="form-control" required>
+                </div>
+            </fieldset>
+
+            <fieldset class="border p-4 rounded mt-4">
+                <legend class="w-auto px-2 text-primary">Informações do Pet</legend>
+
+                <div class="col-md-6">
+                    <label for="pet-name" class="form-label">Nome do Pet:</label>
+                    <input type="text" id="pet-name" name="pet-name" class="form-control" required>
+                </div>
+
+                <div class="col-md-6">
+                    <label for="pet-type" class="form-label">Tipo:</label>
+                    <input type="text" id="pet-type" name="pet-type" class="form-control" required>
+                </div>
+
+                <div class="col-md-6">
+                    <label for="breed" class="form-label">Raça:</label>
+                    <input type="text" id="breed" name="breed" class="form-control" required>
+                </div>
+
+                <div class="col-md-6">
+                    <label class="form-label">Temperamento:</label>
+                    <div>
+                        <input type="radio" id="calm" name="temperament" value="Calmo" class="form-check-input">
+                        <label for="calm" class="form-check-label">Calmo</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="agitated" name="temperament" value="Agitado" class="form-check-input">
+                        <label for="agitated" class="form-check-label">Agitado</label>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <label for="date" class="form-label">Data do Banho & Tosa:</label>
+                    <input type="date" id="date" name="date" class="form-control" required>
+                </div>
+
+                <div class="col-md-6">
+                    <label for="service-type" class="form-label">Tipo de Serviço:</label>
+                    <select id="service-type" name="service-type" class="form-select">
+                        <option value="banho">Banho</option>
+                        <option value="tosa">Tosa</option>
+                        <option value="banho-tosa">Banho & Tosa</option>
+                    </select>
+                </div>
+
+                <div class="col-md-6">
+                    <label for="extras" class="form-label">Serviços Extras:</label>
+                    <div>
+                        <input type="checkbox" id="nails" name="extras" value="Corte de Unhas" class="form-check-input">
+                        <label for="nails" class="form-check-label">Corte de Unhas</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="teeth" name="extras" value="Limpeza de Dentes" class="form-check-input">
+                        <label for="teeth" class="form-check-label">Limpeza de Dentes</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <div class="col-12 text-center">
+                <button type="submit" class="btn btn-primary">Enviar</button>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
+        </form>
     </div>
 
     <footer class="py-3 my-4">

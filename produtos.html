@@ -4,10 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Patacadabra: O paraíso de seu pet!</title>
+    <title>Patacadabra: Produtos! </title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="css/index.css" rel="stylesheet">
+    <link href="css/produtos.css" rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Carter+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
@@ -55,8 +56,7 @@
                             <a class="nav-link" href="/perfil.html">Perfil do usuário</a>
                         </li>
                     </ul>
-                    <p>Feito com ❤️ por <a href="https://www.linkedin.com/in/lucianakaroli/" target="_blank">Luciana
-                            Silva</a></p>
+                    <p>Feito com ❤️ por <a href="https://www.linkedin.com/in/lucianakaroli/" target="_blank">Luciana Silva</a></p>
                 </div>
             </div>
         </div>
@@ -107,33 +107,91 @@
         </div>
     </div>
 
-    <div class="container">
-        <div id="carouselExampleIndicators" class="carousel slide">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <div class="container produtos">
+        <div class="row justify-content-center">
+            <div class="col-12 text-center">
             </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="/assets/pagina-inicial.png" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item active">
-                <img src="/assets/hora-banho.png" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item active">
-                <img src="/assets/gato-mulher.png" class="d-block w-100" alt="...">
-              </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <!-- Produto 1 -->
+            <div class="col-md-3 text-center product-item">
+                <img src="/assets/goden-racao.png" alt="Ração Golden Special Gatos Adultos Frango e Carne"
+                    class="img-fluid">
+                <h5>Ração Golden Special Gatos Adultos Frango e Carne</h5>
+                <p>A partir de <strong>R$ 159,90</strong></p>
+                <button class="btn btn-warning">COMPRE AQUI</button>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
+
+            <!-- Produto 2 -->
+            <div class="col-md-3 text-center product-item">
+                <img src="/assets/biscoito-pedigree.png" alt="Biscoito Pedigree Biscrok Para Cães Adultos Multi 1 Kg"
+                    class="img-fluid">
+                <h5>Biscoito Pedigree Biscrok Para Cães Adultos Multi 1 Kg</h5>
+                <p>A partir de <strong>R$ 29,67</strong></p>
+                <button class="btn btn-warning">COMPRE AQUI</button>
+            </div>
+
+            <!-- Produto 3 -->
+            <div class="col-md-3 text-center product-item">
+                <img src="/assets/roedores-feno.png" alt="Alimento Jaal Para Roedores Feno" class="img-fluid">
+                <h5>Alimento Jaal Para Roedores Feno</h5>
+                <p>A partir de <strong>R$ 35,90</strong></p>
+                <button class="btn btn-warning">COMPRE AQUI</button>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <!-- Produto 4 -->
+            <div class="col-md-3 text-center product-item">
+                <img src="/assets/racao-premiere.png" alt="Ração Premier Pet Golden para Cães" class="img-fluid">
+                <h5>Ração Premier Pet Golden para Cães</h5>
+                <p>A partir de <strong>R$ 119,90</strong></p>
+                <button class="btn btn-warning">COMPRE AQUI</button>
+            </div>
+
+            <!-- Produto 5 -->
+            <div class="col-md-3 text-center product-item">
+                <img src="/assets/petisco-dreamies.png" alt="Petisco Dreamies para Gatos Sabor Frango 40g" class="img-fluid">
+                <h5>Petisco Dreamies para Gatos Sabor Frango 40g</h5>
+                <p>A partir de <strong>R$ 9,99</strong></p>
+                <button class="btn btn-warning">COMPRE AQUI</button>
+            </div>
+
+            <!-- Produto 6 -->
+            <div class="col-md-3 text-center product-item">
+                <img src="/assets/brinquedo-bola.png" alt="Brinquedo para Cães Bola de Borracha" class="img-fluid">
+                <h5>Brinquedo para Cães Bola de Borracha</h5>
+                <p>A partir de <strong>R$ 14,90</strong></p>
+                <button class="btn btn-warning">COMPRE AQUI</button>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <!-- Produto 7 -->
+            <div class="col-md-3 text-center product-item">
+                <img src="/assets/suplemento-cavalo.png" alt="Suplemento cavalo forte" class="img-fluid">
+                <h5>Suplemento cavalo forte</h5>
+                <p>A partir de <strong>R$ 155,00</strong></p>
+                <button class="btn btn-warning">COMPRE AQUI</button>
+            </div>
+
+            <!-- Produto 8 -->
+            <div class="col-md-3 text-center product-item">
+                <img src="/assets/racao-leitao.png" alt="Ração Para Porco Leitão Suínos Em Todas As Fases" class="img-fluid">
+                <h5>Ração Para Porco Leitão Suínos Em Todas As Fases</h5>
+                <p>A partir de <strong>R$ 149,99</strong></p>
+                <button class="btn btn-warning">COMPRE AQUI</button>
+            </div>
+
+            <!-- Produto 9 -->
+            <div class="col-md-3 text-center product-item">
+                <img src="/assets/crescimento-aves.png" alt="Núcleo Crescimento E Engorda Frangos Galinhas Pintinhos 25kg" class="img-fluid">
+                <h5>Núcleo Crescimento E Engorda Frangos Galinhas Pintinhos 25kg</h5>
+                <p>A partir de <strong>R$ 279,00</strong></p>
+                <button class="btn btn-warning">COMPRE AQUI</button>
+            </div>
+        </div>
     </div>
 
     <footer class="py-3 my-4">
@@ -145,7 +203,7 @@
         <p class="text-center text-body-secondary">Feito com ❤️ por <a href="https://www.linkedin.com/in/lucianakaroli/" target="_blank">Luciana Silva</a></p>
         <p class="text-center text-body-secondary">© 2024 Company, Inc</p>
       </footer>
-    
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
